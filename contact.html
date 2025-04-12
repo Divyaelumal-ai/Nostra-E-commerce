@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Ion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">HOME</a></p>
+            <p class="navbar-link"><a href="collection.html">COLLECTION</a></p>
+            <p class="navbar-link"><a href="contact.html">CONTACT</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">HOME</a></p>
+            <p class="side-navbar-link"><a href="collection.html">COLLECTION</a></p>
+            <p class="side-navbar-link"><a href="contact.html">CONTACT</a></p>
+        </div>
+    </div>
+
+    <div class="contact-details">
+        <h1>Contact Us</h1>
+        <form id="forms">
+            <div>
+                <label classname="label-container">Name:</label>
+                <input classname="search-item" type="text">
+            </div>
+            <div>
+                <label classname="label-container">Email</label>
+                <input classname="search-item" type="email">
+            </div>
+            <div>
+                <label classname="label-container">Message</label>
+                <input classname="search-item" type="text">
+            </div>
+
+            <button class="response">Submit</button>
+
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer box-1">
+                <h2 class="headingtext">Nostra</h2>
+                <p>Nostra brings you the latest in fashion with unbeatable style and comfort.
+                    Discover unique collections curated for every season and every personality.
+                    Follow us for updates, offers, and the newest trends in fashion</p>
+            </div>
+
+            <div class="footer-cointainer-ion">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <p>@2025 Nostra.com</p>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
